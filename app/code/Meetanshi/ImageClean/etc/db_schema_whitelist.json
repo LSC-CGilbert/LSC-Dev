@@ -1,0 +1,20 @@
+{
+    "meetanshi_imageclean": {
+        "column": {
+            "imageclean_id": true,
+            "isproduct": true,
+            "filename": true,
+            "used": true,
+            "product_id": true,
+            "path": true,
+            "size": true,
+            "product_name": true
+        },
+        "index": {
+            "MEETANSHI_IMAGECLEAN_FILENAME": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

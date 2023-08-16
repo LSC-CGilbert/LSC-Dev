@@ -1,0 +1,119 @@
+<?php
+/**
+ * BrandCrock Industryarc Theme in Magento2
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the GNU General Public License
+ *
+ * DISCLAIMER
+ *
+ * Do not add or edit the files if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category   BrandCrock
+ * @package    BrandCrock_Industryarc
+ * @copyright  Copyright (c) BrandCrock (https://www.brandcrock.com/)
+ * @license    GNU General Public License
+ */
+
+$blockObj = $block->getLayout()->createBlock(BrandCrock\Industryarc\Block\Frontend\Block::class);
+$helper = $blockObj->getHelperData();
+$preloader_bg_color = $helper->getPreloaderConfig('bcia_preloader_bg_clr') ?
+    $helper->getPreloaderConfig('bcia_preloader_bg_clr') : '#fff';
+$preloader_image = $helper->getPreloaderImage() ? $helper->getPreloaderImage() :
+    $block->getViewFileUrl('images/bcia_loader.gif');
+
+$baseUrl = $helper->getBaseUrl();
+$sliderOverlay = $helper->getThemeConfig('bcia_slider_block_header');
+$quickviewOverlay = $helper->getProductColorConfig('bcia_product_grid_hover');
+
+$bcia_primary_color = $helper->getThemeConfig('bcia_primary_color') ?
+    $helper->getThemeConfig('bcia_primary_color') : "#fcb222";
+$bcia_secondary_color = $helper->getThemeConfig('bcia_secondary_color') ?
+    $helper->getThemeConfig('bcia_secondary_color') : "#1b1200";
+$bcia_primary_text_color = $helper->getThemeConfig('bcia_primary_text_color') ?
+    $helper->getThemeConfig('bcia_primary_text_color') : "#fff";
+$bcia_secondary_text_color = $helper->getThemeConfig('bcia_secondary_text_color') ?
+    $helper->getThemeConfig('bcia_secondary_text_color') : "#fff";
+
+$bcia_header_primary_color = $helper->getHeaderColorConfig('bcia_header_primary_color') ?
+    $helper->getHeaderColorConfig('bcia_header_primary_color') : "#fff";
+$bcia_header_secondary_color = $helper->getHeaderColorConfig('bcia_header_secondary_color') ?
+    $helper->getHeaderColorConfig('bcia_header_secondary_color') : "#fcb222";
+$bcia_header_background_color = $helper->getHeaderColorConfig('bcia_header_background_color') ?
+    $helper->getHeaderColorConfig('bcia_header_background_color') : "rgba(0,0,0,.7)";
+$bcia_header_search_bg_color = $helper->getHeaderColorConfig('bcia_header_search_bg_color') ?
+    $helper->getHeaderColorConfig('bcia_header_search_bg_color') : "#fff";
+
+$bcia_footer_primary_color = $helper->getFooterColorConfig('bcia_footer_primary_color') ?
+    $helper->getFooterColorConfig('bcia_footer_primary_color') : "#1b1200";
+$bcia_footer_secondary_color = $helper->getFooterColorConfig('bcia_footer_secondary_color') ?
+    $helper->getFooterColorConfig('bcia_footer_secondary_color') : "#fcb222";
+$bcia_footer_background_color = $helper->getFooterColorConfig('bcia_footer_background_color') ?
+    $helper->getFooterColorConfig('bcia_footer_background_color') : "#fff";
+
+$bcia_product_price_color = $helper->getProductColorConfig('bcia_product_price_color') ?
+    $helper->getProductColorConfig('bcia_product_price_color') : "#e52427";
+$bcia_product_listing_bread_bg_color = $helper->getProductColorConfig('bcia_product_listing_bread_bg_color') ?
+    $helper->getProductColorConfig('bcia_product_listing_bread_bg_color') : "#fff";
+$bcia_product_listing_bread_text_color = $helper->getProductColorConfig('bcia_product_listing_bread_text_color') ?
+    $helper->getProductColorConfig('bcia_product_listing_bread_text_color') : "#000";
+$bcia_product_listing_side_bg_color = $helper->getProductColorConfig('bcia_product_listing_side_bg_color') ?
+    $helper->getProductColorConfig('bcia_product_listing_side_bg_color') : "#fff";
+$bcia_product_listing_side_text_color = $helper->getProductColorConfig('bcia_product_listing_side_text_color') ?
+    $helper->getProductColorConfig('bcia_product_listing_side_text_color') : "#fff";
+
+$bcia_product_listing_grid_color = $helper->getProductColorConfig('bcia_product_listing_grid_color') ?
+    $helper->getProductColorConfig('bcia_product_listing_grid_color') : "#fff";
+$bcia_product_listing_grid_text_color = $helper->getProductColorConfig('bcia_product_listing_grid_text_color') ?
+    $helper->getProductColorConfig('bcia_product_listing_grid_text_color') : "#fff";
+$bcia_product_detail_bg_color = $helper->getProductColorConfig('bcia_product_detail_bg_color') ?
+    $helper->getProductColorConfig('bcia_product_detail_bg_color') : "#fff";
+$bcia_product_detail_text_color = $helper->getProductColorConfig('bcia_product_detail_text_color') ?
+    $helper->getProductColorConfig('bcia_product_detail_text_color') : "#fff";
+$bcia_product_bg_image = $helper->getProductBgImage() ?
+    $helper->getProductBgImage() : $block->getViewFileUrl('BrandCrock_Industryarc::images/bcia_product_bg.png');
+
+?>
+<input class="bcia_primary_color" type="hidden" value="<?= /* @noEscape */ $bcia_primary_color ?>" />
+<input class="bcia_secondary_color" type="hidden" value="<?= /* @noEscape */ $bcia_secondary_color ?>" />
+<input class="bcia_primary_text_color" type="hidden" value="<?= /* @noEscape */ $bcia_primary_text_color ?>" />
+<input class="bcia_secondary_text_color" type="hidden" value="<?= /* @noEscape */ $bcia_secondary_text_color ?>" />
+
+<input class="bcia_header_primary_color" type="hidden" value="<?= /* @noEscape */ $bcia_header_primary_color ?>" />
+<input class="bcia_header_secondary_color" type="hidden" value="<?= /* @noEscape */ $bcia_header_secondary_color ?>"/>
+<input class="bcia_header_bg_color" type="hidden" value="<?= /* @noEscape */ $bcia_header_background_color ?>" />
+<input class="bcia_header_search_bg_color" type="hidden" value="<?= /* @noEscape */ $bcia_header_search_bg_color ?>"/>
+
+<input class="bcia_footer_primary_color" type="hidden" value="<?= /* @noEscape */ $bcia_footer_primary_color ?>" />
+<input class="bcia_footer_secondary_color" type="hidden" value="<?= /* @noEscape */ $bcia_footer_secondary_color ?>"/>
+<input class="bcia_footer_bg_color" type="hidden" value="<?= /* @noEscape */ $bcia_footer_background_color ?>" />
+
+<input class="bcia_product_price_color" type="hidden" value="<?= /* @noEscape */ $bcia_product_price_color ?>" />
+<input class="bcia_product_bread_bg_color" type="hidden"
+    value="<?= /* @noEscape */ $bcia_product_listing_bread_bg_color ?>" />
+<input class="bcia_product_bread_text_color" type="hidden"
+    value="<?= /* @noEscape */ $bcia_product_listing_bread_text_color ?>" />
+<input class="bcia_product_side_color" type="hidden"
+    value="<?= /* @noEscape */ $bcia_product_listing_side_bg_color ?>" />
+<input class="bcia_product_side_text_color" type="hidden"
+    value="<?= /* @noEscape */ $bcia_product_listing_side_text_color ?>" />
+
+<input class="bcia_product_grid_color" type="hidden" value="<?= /* @noEscape */ $bcia_product_listing_grid_color ?>"/>
+<input class="bcia_product_grid_text_color" type="hidden"
+    value="<?= /* @noEscape */ $bcia_product_listing_grid_text_color ?>" />
+<input class="bcia_product_detail_color" type="hidden" value="<?= /* @noEscape */ $bcia_product_detail_bg_color ?>" />
+<input class="bcia_product_detail_text_color" type="hidden"
+    value="<?= /* @noEscape */ $bcia_product_detail_text_color ?>" />
+<input class="bcia-product-bg-img" type="hidden" value="<?= /* @noEscape */ $bcia_product_bg_image ?>" />
+
+<input class="bcia-base-url" type="hidden" value="<?= /* @noEscape */ $baseUrl ?>" />
+<input class="bcia-view-url" type="hidden"
+    value="<?= /* @noEscape */ $block->getViewFileUrl('BrandCrock_Industryarc::images') ?>" />
+<input class="bcia-slider-over-header" type="hidden" value="<?= /* @noEscape */ $sliderOverlay ?>" />
+<input class="bcia-product-quickview" type="hidden" value="<?= /* @noEscape */ $quickviewOverlay ?>" />
+
+<div id="preloader" style="background: <?= /* @noEscape */ $preloader_bg_color ?>">
+    <div class="loaderImage" style="background-image: url(<?= /* @noEscape */ $preloader_image ?>);"></div>
+</div>

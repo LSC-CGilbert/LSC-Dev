@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * BrandCrock Industryarc Plugin for Industryarc Theme in Magento2
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the GNU General Public License
+ *
+ * DISCLAIMER
+ *
+ * Do not add or edit the files if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category   BrandCrock
+ * @package    BrandCrock_Industryarc
+ * @copyright  Copyright (c) BrandCrock (https://www.brandcrock.com/)
+ * @license    GNU General Public License
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="BrandCrock_Industryarc::bc_industryarc" title="BrandCrock Industryarc" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

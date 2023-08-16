@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="meetanshi_imageclean" resource="default" engine="innodb" comment="Meetanshi ImageClean">
+        <column xsi:type="int" name="imageclean_id" unsigned="false" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="smallint" name="isproduct" nullable="false" comment="product image"/>
+        <column xsi:type="varchar" name="filename" nullable="false" length="256" comment="File Name"/>
+        <column xsi:type="smallint" name="used" nullable="true" comment="Product Image Status"/>
+        <column xsi:type="int" name="product_id" nullable="true" comment="Product Id"/>
+        <column xsi:type="varchar" name="path" nullable="true" length="256" comment="File Path"/>
+        <column xsi:type="varchar" name="size" nullable="true" length="130" comment="File Size"/>
+        <column xsi:type="varchar" name="product_name" nullable="true" length="225" comment="Product Name"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="imageclean_id"/>
+        </constraint>
+        <index referenceId="MEETANSHI_IMAGECLEAN_FILENAME" indexType="fulltext">
+            <column name="filename"/>
+        </index>
+    </table>
+</schema>

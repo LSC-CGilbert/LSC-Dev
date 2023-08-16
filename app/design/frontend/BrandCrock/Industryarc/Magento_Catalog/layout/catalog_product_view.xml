@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * BrandCrock Industryarc Theme in Magento2
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the GNU General Public License
+ *
+ * DISCLAIMER
+ *
+ * Do not add or edit the files if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category   BrandCrock
+ * @package    BrandCrock_Industryarc
+ * @copyright  Copyright (c) BrandCrock (https://www.brandcrock.com/)
+ * @license    GNU General Public License
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.main">
+            <block class="Magento\Catalog\Block\Product\View" name="industryarc.product.view" template="Magento_Catalog::product/bcia_details.phtml" after="product.info.addto"/>
+        </referenceContainer>
+    </body>
+</page>

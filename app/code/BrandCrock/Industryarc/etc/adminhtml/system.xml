@@ -1,0 +1,424 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * BrandCrock Industryarc Plugin for Industryarc Theme in Magento2
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the GNU General Public License
+ *
+ * DISCLAIMER
+ *
+ * Do not add or edit the files if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category   BrandCrock
+ * @package    BrandCrock_Industryarc
+ * @copyright  Copyright (c) BrandCrock (https://www.brandcrock.com/)
+ * @license    GNU General Public Licensel
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="brandcrock" sortOrder="400">
+            <label>BrandCrock</label>
+        </tab>
+        <section id="industryarc_theme" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Industryarc</label>
+            <tab>brandcrock</tab>
+            <resource>BrandCrock_Industryarc::bc_industryarc</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Theme Configuration</label>
+                <field id="bcia_primary_color" translate="label tooltip" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Industryarc Theme Primary Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme design primary color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_primary_text_color" translate="label tooltip" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Industryarc Theme Primary Text Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme design primary text color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_secondary_color" translate="label tooltip" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Industryarc Theme Secondary Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme design Secondary color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_secondary_text_color" translate="label tooltip" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Industryarc Theme Secondary Text Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This text color is set as Industryarc Theme design Secondary text color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_addhomelink" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Add Home Link in Navigation</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bcia_sociallink_footer" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Social Link in Footer</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bcia_sociallink_product" translate="label tooltip" type="select" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Social Link in Product Detail View</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <tooltip>In product detail page, there is only 3 social media sharing options are supported (Facebook, Twitter and Whatsapp)</tooltip>
+                </field>
+                <field id="bcia_sociallink_header" translate="label" type="select" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Social Link in Header</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bcia_slider_block_header" translate="label tooltip" type="select" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Homepage Header Overlay with Primary Block</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <tooltip>This value is enable the primary block overlay with homepage header (primary custom block moving to background of header)</tooltip>
+                </field>
+            </group>
+            <group id="bcia_header_color_config" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Header Color Configuration</label>
+                <field id="bcia_header_primary_color" translate="label tooltip" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Header Primary Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme header primary color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_header_secondary_color" translate="label tooltip" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Header Secondary Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme header secondary color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_header_background_color" translate="label tooltip" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Header Background Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme header background color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_header_search_bg_color" translate="label tooltip" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Header Search Box Background Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme header search box background color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+            </group>
+            <group id="bcia_footer_color_config" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Footer Color Configuration</label>
+                <field id="bcia_footer_primary_color" translate="label tooltip" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Footer Primary Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme footer primary color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_footer_secondary_color" translate="label tooltip" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Footer Secondary Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme footer secondary color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_footer_background_color" translate="label tooltip" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Footer Background Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme footer background color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+            </group>
+            <group id="bcia_product_color_config" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Products Design Configuration</label>
+                <field id="bcia_product_price_color" translate="label tooltip" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Price Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This is set as Industryarc Theme product price color to all pages</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_product_listing_bread_bg_color" translate="label tooltip" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Listing/Detail Page Breadcrumb Background Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme breadcrumb background color in listing/detail page</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_product_listing_bread_text_color" translate="label tooltip" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Listing/Detail Page Breadcrumb Text Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme breadcrumb text color in listing/detail page</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_product_listing_side_bg_color" translate="label tooltip" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Listing Page Sidebar/Filter Background Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme listing page search/filter background color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_product_listing_side_text_color" translate="label tooltip" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Listing Page Sidebar/Filter Text Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme listing page search/filter text color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_product_listing_grid_color" translate="label tooltip" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Listing Page Grid Background Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme listing page product grid column background color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_product_listing_grid_text_color" translate="label tooltip" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Listing Page Grid Text Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme listing page product grid column text color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_product_detail_bg_color" translate="label tooltip" type="text" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Detail Page Background Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme product detail page content background color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_product_detail_text_color" translate="label tooltip" type="text" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Detail Page text Color</label>
+                    <validate>required-entry</validate>
+                    <tooltip>This color is set as Industryarc Theme product detail page content text color</tooltip>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_product_bg_image" translate="label" type="image" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Detail/Listing Page Background Image</label>
+                    <backend_model>BrandCrock\Industryarc\Model\Config\Image</backend_model>
+                    <base_url type="media" scope_info="1">brandcrock/industryarc</base_url>
+                </field>
+                <field id="bcia_product_grid_hover" translate="label" type="select" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Product Grid Add to cart Button on Hover</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="bcia_social_links" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Social Links Configuration</label>
+                <field id="bcia_social_icon_title_footer" translate="label comment" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title for Social Media Icons in Footer</label>
+                    <comment>Title for social media icons button shown in footer</comment>
+                </field>
+                <field id="bcia_social_icon_title_product" translate="label comment" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title for Social Media Icons in Product Detail Page</label>
+                    <comment>Title for social media icons button shown in product detail page</comment>
+                </field>
+                <field id="bcia_facebook" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Facebook</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bcia_facebook_url" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Facebook URL</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="bcia_facebook">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_twitter" translate="label" type="select" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Twitter</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bcia_twitter_url" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Twitter URL</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="bcia_twitter">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_instagram" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Instagram</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bcia_instagram_url" translate="label" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Instagram URL</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="bcia_instagram">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_youtube" translate="label" type="select" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Youtube</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bcia_youtube_url" translate="label" type="text" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Youtube URL</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="bcia_youtube">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_whatsapp" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Whatsapp</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bcia_whatsapp_url" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Whatsapp URL</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="bcia_whatsapp">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_pinterest" translate="label" type="select" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Pinterest</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bcia_pinterest_url" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Pinterest URL</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="bcia_pinterest">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_xing" translate="label" type="select" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Xing</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bcia_xing_url" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Xing URL</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="bcia_xing">1</field>
+                    </depends>
+                </field>
+            </group>
+            <group id="bcia_footer_config" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Footer Design Configuration</label>
+                <field id="bcia_storemap_bottom" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Store Map in Footer</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bcia_storemap_url" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Store Map URL</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="bcia_storemap_bottom">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_appstore_1_bottom" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable App Store Icon 1 in Footer</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bcia_appstore_url1" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>App Store Icon 1 URL</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="bcia_appstore_1_bottom">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_appstore_1_image" translate="label" type="image" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>App Store Icon 1 Image</label>
+                    <backend_model>BrandCrock\Industryarc\Model\Config\Image</backend_model>
+                    <validate>required-entry</validate>
+                    <base_url type="media" scope_info="1">brandcrock/industryarc</base_url>
+                    <depends>
+                        <field id="bcia_appstore_1_bottom">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_appstore_2_bottom" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable App Store Icon 2 in Footer</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bcia_appstore_url2" translate="label" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>App Store Icon 2 URL</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="bcia_appstore_2_bottom">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_appstore_2_image" translate="label" type="image" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>App Store Icon 2 Image</label>
+                    <backend_model>BrandCrock\Industryarc\Model\Config\Image</backend_model>
+                    <validate>required-entry</validate>
+                    <base_url type="media" scope_info="1">brandcrock/industryarc</base_url>
+                    <depends>
+                        <field id="bcia_appstore_2_bottom">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_ft_company_info" translate="label" type="select" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Footer Company information</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bcia_ft_company_desc" translate="label tooltip" type="textarea" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Footer Company Description</label>
+                    <tooltip>This description is set as Industryarc Theme footer company information description</tooltip>
+                    <depends>
+                        <field id="bcia_ft_company_info">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_ft_company_image" translate="label" type="image" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Footer Company Info Logo</label>
+                    <backend_model>BrandCrock\Industryarc\Model\Config\Image</backend_model>
+                    <base_url type="media" scope_info="1">brandcrock/industryarc</base_url>
+                    <depends>
+                        <field id="bcia_ft_company_info">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_ft_company_add" translate="label tooltip" type="textarea" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Footer Company Address</label>
+                    <tooltip>This address is set as Industryarc Theme footer company information address</tooltip>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="bcia_ft_company_info">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_ft_company_email" translate="label tooltip" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Footer Company Email Address</label>
+                    <validate>validate-email required-entry</validate>
+                    <tooltip>This email address is set as Industryarc Theme footer company information email address</tooltip>
+                    <depends>
+                        <field id="bcia_ft_company_info">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_ft_company_num" translate="label tooltip" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Footer Company Contact Number</label>
+                    <validate>required-entry validate-number validate-length minimum-length-10</validate>
+                    <tooltip>This contact number is set as Industryarc Theme footer company information contact number</tooltip>
+                    <depends>
+                        <field id="bcia_ft_company_info">1</field>
+                    </depends>
+                </field>
+            </group>
+            <group id="bcia_preloader" translate="label" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Preloader Configuration</label>
+                <field id="bcia_preloader_bg_clr" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Preloader Background Color</label>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                </field>
+                <field id="bcia_preloader_image" translate="label" type="image" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Preloader Image</label>
+                    <backend_model>BrandCrock\Industryarc\Model\Config\Image</backend_model>
+                    <base_url type="media" scope_info="1">brandcrock/industryarc</base_url>
+                </field>
+            </group>
+            <group id="bcia_bottom_ad" translate="label" type="text" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Bottom Ad Popup Configuration</label>
+                <field id="bcia_bottom_ad_enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Bottom Ad Popup</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bcia_bottom_ad_image" translate="label" type="image" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Ad Popup Image</label>
+                    <backend_model>BrandCrock\Industryarc\Model\Config\Image</backend_model>
+                    <base_url type="media" scope_info="1">brandcrock/industryarc</base_url>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="bcia_bottom_ad_enable">1</field>
+                    </depends>
+                </field>
+                <field id="bcia_ad_bg_clr" translate="label comment" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Ad Popup Background Color</label>
+                    <frontend_model>BrandCrock\Industryarc\Block\Adminhtml\System\Color</frontend_model>
+                    <depends>
+                        <field id="bcia_bottom_ad_enable">1</field>
+                    </depends>
+                    <comment>This color is set as the background color for the images that have only a transparent background</comment>
+                </field>
+                <field id="bcia_bottom_ad_url" translate="label comment" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Ad Popup Url</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="bcia_bottom_ad_enable">1</field>
+                    </depends>
+                    <comment>Enter Ad Popup Image URL</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

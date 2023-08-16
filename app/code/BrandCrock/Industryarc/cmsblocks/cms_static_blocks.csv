@@ -1,0 +1,349 @@
+title,identifier,content,is_active,stores
+Industryarc Banner 1,industryarc_banner_1,"<style>
+    #html-body [data-pb-style=GI96VVR]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}
+    #html-body [data-pb-style=KC7RIYR]{text-align:center;min-height:300px}
+    #html-body [data-pb-style=M8SH6AE]{background-position:center center;background-size:cover;background-repeat:no-repeat;min-height:300px}
+    #html-body [data-pb-style=VY1HNU0]{min-height:300px;background-color:transparent}
+    #html-body [data-pb-style=WWCJ59P]{background-position:center center;background-size:cover;background-repeat:no-repeat;min-height:300px}
+    #html-body [data-pb-style=F8CAMQT]{min-height:300px;background-color:transparent}
+    #html-body [data-pb-style=JFT9FRR]{background-position:center center;background-size:cover;background-repeat:no-repeat;min-height:300px}
+    #html-body [data-pb-style=SX6SA8U]{min-height:300px;background-color:transparent}
+    #html-body [data-pb-style=H61J7BV]{background-position:center center;background-size:cover;background-repeat:no-repeat;min-height:300px}
+    #html-body [data-pb-style=UCY3MM7]{min-height:300px;background-color:transparent}
+    </style>
+    <div class=""industryarc-1"" data-content-type=""row"" data-appearance=""full-width"" data-enable-parallax=""0"" data-parallax-speed=""0.5"" data-background-images=""{}"" data-background-type=""image"" data-video-loop=""true"" data-video-play-only-visible=""true"" data-video-lazy-load=""true"" data-video-fallback-src="""" data-element=""main"" data-pb-style=""GI96VVR"">
+        <div class=""row-full-width-inner"" data-element=""inner"">
+            <div class=""pagebuilder-slider bcia-page-slider"" data-content-type=""slider"" data-appearance=""default"" data-autoplay=""true"" data-autoplay-speed=""4000"" data-fade=""false"" data-infinite-loop=""true"" data-show-arrows=""true"" data-show-dots=""true"" data-element=""main"" data-pb-style=""KC7RIYR"">
+                <div class=""bcia_slider_one bcia-slider"" data-content-type=""slide"" data-slide-name=""bcia_slider_one"" data-appearance=""poster"" data-show-button=""never"" data-show-overlay=""never"" data-element=""main"">
+                    <div data-element=""empty_link"">
+                        <div class=""pagebuilder-slide-wrapper"" data-background-images=""{}"" data-background-type=""image"" data-video-loop=""true"" data-video-play-only-visible=""true"" data-video-lazy-load=""true"" data-video-fallback-src="""" data-element=""wrapper"" data-pb-style=""M8SH6AE"">
+                            <div class=""pagebuilder-overlay pagebuilder-poster-overlay"" data-overlay-color="""" aria-label="""" title="""" data-element=""overlay"" data-pb-style=""VY1HNU0"">
+                                <div class=""pagebuilder-poster-content"">
+                                    <div data-element=""content"">
+                                        <div class=""bcia-slider-image"">
+                                        </div>
+                                        <div class=""bcia-slider-content"">
+                                            <div class=""bcia-block-title"">
+                                                <h2>Factory Industrial Production</h2>
+                                            </div>
+                                            <div class=""bcia-block-content"">
+                                                <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
+                                                </p>
+                                            </div>
+                                            <div class=""bcia-block-button"">
+                                                <a href=""#"">Explore Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=""bcia_slider_two bcia-slider"" data-content-type=""slide"" data-slide-name=""bcia_slider_two"" data-appearance=""poster"" data-show-button=""never"" data-show-overlay=""never"" data-element=""main"">
+                    <div data-element=""empty_link"">
+                        <div class=""pagebuilder-slide-wrapper"" data-background-images=""{}"" data-background-type=""image"" data-video-loop=""true"" data-video-play-only-visible=""true"" data-video-lazy-load=""true"" data-video-fallback-src="""" data-element=""wrapper"" data-pb-style=""WWCJ59P"">
+                            <div class=""pagebuilder-overlay pagebuilder-poster-overlay"" data-overlay-color="""" aria-label="""" title="""" data-element=""overlay"" data-pb-style=""F8CAMQT"">
+                                <div class=""pagebuilder-poster-content"">
+                                    <div data-element=""content"">
+                                        <div class=""bcia-slider-image"">
+                                        </div>
+                                        <div class=""bcia-slider-content"">
+                                            <div class=""bcia-block-title"">
+                                                <h2>Around The World</h2>
+                                            </div>
+                                            <div class=""bcia-block-content"">
+                                                <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
+                                                </p>
+                                            </div>
+                                            <div class=""bcia-block-button"">
+                                                <a href=""#"">Explore Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=""bcia_slider_three bcia-slider"" data-content-type=""slide"" data-slide-name=""bcia_slider_three"" data-appearance=""poster"" data-show-button=""never"" data-show-overlay=""never"" data-element=""main"">
+                    <div data-element=""empty_link"">
+                        <div class=""pagebuilder-slide-wrapper"" data-background-images=""{}"" data-background-type=""image"" data-video-loop=""true"" data-video-play-only-visible=""true"" data-video-lazy-load=""true"" data-video-fallback-src="""" data-element=""wrapper"" data-pb-style=""JFT9FRR"">
+                            <div class=""pagebuilder-overlay pagebuilder-poster-overlay"" data-overlay-color="""" aria-label="""" title="""" data-element=""overlay"" data-pb-style=""SX6SA8U"">
+                                <div class=""pagebuilder-poster-content"">
+                                    <div data-element=""content"">
+                                        <div class=""bcia-slider-image"">
+                                        </div>
+                                        <div class=""bcia-slider-content"">
+                                            <div class=""bcia-block-title"">
+                                                <h2>Build A Better World</h2>
+                                            </div>
+                                            <div class=""bcia-block-content"">
+                                                <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
+                                                </p>
+                                            </div>
+                                            <div class=""bcia-block-button"">
+                                                <a href=""#"">Explore Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=""bcia_slider_four bcia-slider"" data-content-type=""slide"" data-slide-name=""bcia_slider_four"" data-appearance=""poster"" data-show-button=""never"" data-show-overlay=""never"" data-element=""main"">
+                    <div data-element=""empty_link"">
+                        <div class=""pagebuilder-slide-wrapper"" data-background-images=""{}"" data-background-type=""image"" data-video-loop=""true"" data-video-play-only-visible=""true"" data-video-lazy-load=""true"" data-video-fallback-src="""" data-element=""wrapper"" data-pb-style=""H61J7BV"">
+                            <div class=""pagebuilder-overlay pagebuilder-poster-overlay"" data-overlay-color="""" aria-label="""" title="""" data-element=""overlay"" data-pb-style=""UCY3MM7"">
+                                <div class=""pagebuilder-poster-content"">
+                                    <div data-element=""content"">
+                                        <div class=""bcia-slider-image"">
+                                        </div>
+                                        <div class=""bcia-slider-content"">
+                                            <div class=""bcia-block-title"">
+                                                <h2>We're In Bussiness Planet</h2>
+                                            </div>
+                                            <div class=""bcia-block-content"">
+                                                <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
+                                                </p>
+                                            </div>
+                                            <div class=""bcia-block-button"">
+                                                <a href=""#"">Explore Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+",1,0
+Industryarc Banner 2,industryarc_banner_2,"<div class=""industryarc-2"">
+    <div class=""bcia-banner"">
+        <div class=""bcia-block-info"">
+            <span>A height level service provider that recommended to any companies</span>
+        </div>
+        <div class=""bcia-content row"">
+            <div class=""col-md-3"">
+                <div class=""bcia-category"">
+                    <div class=""bcia-banner-bubble"">
+                        <div class=""heading"">
+							<span class=""h3"">Creative features from production industry</span>
+						</div>
+                        <a href=""#"">
+                            <img class=""bcia-img-5"" src=""{{view url=""BrandCrock_Industryarc/images/bcia_service_img_one.png""}}"" alt=""image-5"" />
+                        </a>
+                    </div>
+                    <div class=""bcia-banner-content"">
+                        <div class=""bcia-block-content"">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...
+                            </p>
+                        </div>
+                        <div class=""bcia-block-button"">
+                            <a href=""#"">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=""col-md-3"">
+                <div class=""bcia-category"">
+                    <div class=""bcia-banner-bubble"">
+                        <div class=""heading"">
+							<span class=""h3"">Best Industrial company of the year</span>
+						</div>
+                        <a href=""#"">
+                            <img class=""bcia-img-6"" src=""{{view url=""BrandCrock_Industryarc/images/bcia_service_img_two.png""}}"" alt=""image-6"" />
+                        </a>
+                    </div>
+                    <div class=""bcia-banner-content"">
+                        <div class=""bcia-block-content"">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...
+                            </p>
+                        </div>
+                        <div class=""bcia-block-button"">
+                            <a href=""#"">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=""col-md-3"">
+                <div class=""bcia-category"">
+                    <div class=""bcia-banner-bubble"">
+                        <div class=""heading"">
+						    <span class=""h3"">Successfully completed projects for our clients</span>
+						</div>
+                        <a href=""#"">
+                            <img class=""bcia-img-7"" src=""{{view url=""BrandCrock_Industryarc/images/bcia_service_img_three.png""}}"" alt=""image-7"" />
+                        </a>
+                    </div>
+                    <div class=""bcia-banner-content"">
+                        <div class=""bcia-block-content"">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...
+                            </p>
+                        </div>
+                        <div class=""bcia-block-button"">
+                            <a href=""#"">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=""col-md-3"">
+                <div class=""bcia-category"">
+                    <div class=""bcia-banner-bubble"">
+                        <div class=""heading"">
+							<span class=""h3"">Awesome services from industrial company</span>
+						</div>
+                        <a href=""#"">
+                            <img class=""bcia-img-8"" src=""{{view url=""BrandCrock_Industryarc/images/bcia_service_img_four.png""}}"" alt=""image-8"" />
+                        </a>
+                    </div>
+                    <div class=""bcia-banner-content"">
+                        <div class=""bcia-block-content"">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...
+                            </p>
+                        </div>
+                        <div class=""bcia-block-button"">
+                            <a href=""#"">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+",1,0
+Industryarc Banner 3,industryarc_banner_3,"<div class=""industryarc-3"">
+    <div class=""bcia-banner"">
+        <div class=""bcia-block-contents"">
+            <div class=""bcia-block-title"">
+                <h2>Individually Assess Each Plan And Offer Optimal Solutions!</h2>
+            </div>
+            <div class=""bcia-block-content"">
+                <p>Serving an impressive list of long-term clients with experience and expertise in multiple industries.</p>
+            </div>
+            <div class=""bcia-block-button"">
+                <a href=""#"">Our Services</a>
+            </div>
+        </div>
+        <div class=""bcia-block-img-3"">
+            <a href=""#"">
+                <img class=""bcia-img-9"" src=""{{view url=""BrandCrock_Industryarc/images/bcia_banner_one.png""}}"" alt=""image-9"" />
+            </a>
+        </div>
+    </div>
+</div>
+",1,0
+Industryarc Banner 4,industryarc_banner_4,"<div class=""industryarc-4"">
+    <div class=""bcia-banner"">
+        <div class=""bcia-block-info"">
+            <span>Information & Solutions</span>
+        </div>
+        <div class=""bcia-content row"">
+            <div class=""col-md-3"">
+                <div class=""bcia-category"">
+                    <div class=""bcia-banner-bubble"">
+                        <a href=""#"">
+                            <img class=""bcia-img-10"" src=""{{view url=""BrandCrock_Industryarc/images/bcia_info_one.png""}}"" alt=""image-10"" />
+                        </a>
+                    </div>
+                    <div class=""bcia-banner-content"">
+                        <div class=""bcia-block-content"">
+                            <p>
+                                Professional discipline deals with designing, planning, construction and infrastructures management such as roads, tunnels, bridges.
+                            </p>
+                        </div>
+                        <div class=""bcia-block-button"">
+                            <a href=""#"">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=""col-md-3"">
+                <div class=""bcia-category"">
+                    <div class=""bcia-banner-bubble"">
+                        <a href=""#"">
+                            <img class=""bcia-img-11"" src=""{{view url=""BrandCrock_Industryarc/images/bcia_info_two.png""}}"" alt=""image-11"" />
+                        </a>
+                    </div>
+                    <div class=""bcia-banner-content"">
+                        <div class=""bcia-block-content"">
+                            <p>
+                                Professional discipline deals with designing, planning, construction and infrastructures management such as roads, tunnels, bridges.
+                            </p>
+                        </div>
+                        <div class=""bcia-block-button"">
+                            <a href=""#"">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=""col-md-3"">
+                <div class=""bcia-category"">
+                    <div class=""bcia-banner-bubble"">
+                        <a href=""#"">
+                            <img class=""bcia-img-12"" src=""{{view url=""BrandCrock_Industryarc/images/bcia_info_three.png""}}"" alt=""image-12"" />
+                        </a>
+                    </div>
+                    <div class=""bcia-banner-content"">
+                        <div class=""bcia-block-content"">
+                            <p>
+                                Professional discipline deals with designing, planning, construction and infrastructures management such as roads, tunnels, bridges.
+                            </p>
+                        </div>
+                        <div class=""bcia-block-button"">
+                            <a href=""#"">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=""col-md-3"">
+                <div class=""bcia-category"">
+                    <div class=""bcia-banner-bubble"">
+                        <a href=""#"">
+                            <img class=""bcia-img-13"" src=""{{view url=""BrandCrock_Industryarc/images/bcia_info_four.png""}}"" alt=""image-13"" />
+                        </a>
+                    </div>
+                    <div class=""bcia-banner-content"">
+                        <div class=""bcia-block-content"">
+                            <p>
+                                Professional discipline deals with designing, planning, construction and infrastructures management such as roads, tunnels, bridges.
+                            </p>
+                        </div>
+                        <div class=""bcia-block-button"">
+                            <a href=""#"">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+",1,0
+Industryarc Banner 5,industryarc_banner_5,"<div class=""industryarc-5"" style=""background-image: url({{view url=""BrandCrock_Industryarc/images/bcia_banner_two.png""}})"">
+    <div class=""bcia-banner"">
+        <div class=""bcia-block-contents"">
+            <div class=""bcia-block-title"">
+                <h2>Streamline Your Business</h2>
+            </div>
+            <div class=""bcia-block-content"">
+                <p>Serving an impressive list of long-term clients with experience and expertise in multiple industries.</p>
+            </div>
+            <div class=""bcia-block-button"">
+                <a href=""#"">Get Started</a>
+            </div>
+        </div>
+    </div>
+</div>
+",1,0
