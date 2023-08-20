@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * BrandCrock Industryarc Theme in Magento2
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the GNU General Public License
+ *
+ * DISCLAIMER
+ *
+ * Do not add or edit the files if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category   BrandCrock
+ * @package    BrandCrock_Industryarc
+ * @copyright  Copyright (c) BrandCrock (https://www.brandcrock.com/)
+ * @license    GNU General Public License
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header.panel">
+            <block class="Magento\Framework\View\Element\Template" name="industryarc.header.sociallinks" as="industryarc_header_sociallinks" before="-" template="Magento_Theme::html/header/sociallinks.phtml" ></block>
+
+        </referenceContainer>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_img_width" xsi:type="number">300</argument> 
+                <argument name="logo_img_height" xsi:type="number">300</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="header" remove="true"/>
+        <referenceBlock name="register-link" remove="true" />
+        <referenceBlock name="wish-list-link" remove="true" />
+        <referenceBlock name="catalog.compare.link" remove="true"/>
+        <referenceContainer name="header.navigation">
+            <block class="Magento\Theme\Block\Html\Topmenu" name="industryarc.header.topmenu" template="Magento_Theme::html/topmenu.phtml" ></block>
+        </referenceContainer>
+        <move element="catalog.topnav" destination="header-wrapper"/>
+        <move element="minicart" destination="header-wrapper" after="catalog.topnav"/>
+        <move element="top.search" destination="header-wrapper" before="-"/>
+        <referenceBlock name="advanced-search-link" remove="true"/>
+
+        <referenceContainer name="footer">
+            <block class="Magento\Framework\View\Element\Template" name="industryarc.social.footer" as="bcia_footer" after="-" template="Magento_Theme::html/footer/footer.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="bcia_footer_info" as="bcia_footer_info" after="footer_links" template="Magento_Theme::html/footer/companyinfo.phtml" />
+        </referenceContainer>
+        <referenceBlock name="footer_links" remove="true" />
+        <move element="copyright" destination="before.body.end"/>
+        <move element="report.bugs" destination="before.body.end"/>
+        <referenceContainer name="after.body.start">
+            <block class="Magento\Framework\View\Element\Template" name="container.preloader" as="preloader" template="Magento_Theme::preloader.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
