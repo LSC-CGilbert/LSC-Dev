@@ -1,34 +1,14 @@
 <?xml version="1.0"?>
-<!--
-/**
- * BrandCrock Industryarc Theme in Magento2
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the GNU General Public License
- *
- * DISCLAIMER
- *
- * Do not add or edit the files if you wish to upgrade this extension to newer
- * version in the future.
- *
- * @category   BrandCrock
- * @package    BrandCrock_Industryarc
- * @copyright  Copyright (c) BrandCrock (https://www.brandcrock.com/)
- * @license    GNU General Public License
- */
--->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="header.panel">
             <block class="Magento\Framework\View\Element\Template" name="industryarc.header.sociallinks" as="industryarc_header_sociallinks" before="-" template="Magento_Theme::html/header/sociallinks.phtml" ></block>
-
         </referenceContainer>
         <referenceBlock name="logo">
             <arguments>
                 <argument name="logo_file" xsi:type="string">images/logo.png</argument>
-                <argument name="logo_img_width" xsi:type="number">300</argument> 
-                <argument name="logo_img_height" xsi:type="number">300</argument>
+                <argument name="logo_img_width" xsi:type="number">150</argument> 
+                <argument name="logo_img_height" xsi:type="number">50</argument>
             </arguments>
         </referenceBlock>
         <referenceBlock name="header" remove="true"/>
