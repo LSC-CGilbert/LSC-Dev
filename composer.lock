@@ -165,16 +165,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.279.0",
+            "version": "3.279.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "7b3d38cfccd393add0ea0ce281de91846967c61e"
+                "reference": "13e0142365a1f07cedab01dbbda605dff8b7832f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7b3d38cfccd393add0ea0ce281de91846967c61e",
-                "reference": "7b3d38cfccd393add0ea0ce281de91846967c61e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/13e0142365a1f07cedab01dbbda605dff8b7832f",
+                "reference": "13e0142365a1f07cedab01dbbda605dff8b7832f",
                 "shasum": ""
             },
             "require": {
@@ -254,9 +254,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.279.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.279.3"
             },
-            "time": "2023-08-16T18:18:34+00:00"
+            "time": "2023-08-21T18:04:10+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -4789,16 +4789,16 @@
         },
         {
             "name": "laminas/laminas-view",
-            "version": "2.29.0",
+            "version": "2.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-view.git",
-                "reference": "b3ae82de4783e899717d2db7bb82b33542c12908"
+                "reference": "055623fd0634f2ab2a51defa03c22ddee4e89df7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-view/zipball/b3ae82de4783e899717d2db7bb82b33542c12908",
-                "reference": "b3ae82de4783e899717d2db7bb82b33542c12908",
+                "url": "https://api.github.com/repos/laminas/laminas-view/zipball/055623fd0634f2ab2a51defa03c22ddee4e89df7",
+                "reference": "055623fd0634f2ab2a51defa03c22ddee4e89df7",
                 "shasum": ""
             },
             "require": {
@@ -4885,7 +4885,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2023-07-20T08:57:28+00:00"
+            "time": "2023-08-17T10:28:59+00:00"
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
@@ -5266,16 +5266,16 @@
         },
         {
             "name": "magefan/module-blog-graph-ql",
-            "version": "2.1.8",
+            "version": "2.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/magefan/module-blog-graph-ql.git",
-                "reference": "2fc0f08b275e469ea6a35277344819ccaa6d172f"
+                "reference": "d290cf0fc0074b4d7e0beeceb08dea59534d9e83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magefan/module-blog-graph-ql/zipball/2fc0f08b275e469ea6a35277344819ccaa6d172f",
-                "reference": "2fc0f08b275e469ea6a35277344819ccaa6d172f",
+                "url": "https://api.github.com/repos/magefan/module-blog-graph-ql/zipball/d290cf0fc0074b4d7e0beeceb08dea59534d9e83",
+                "reference": "d290cf0fc0074b4d7e0beeceb08dea59534d9e83",
                 "shasum": ""
             },
             "type": "magento2-module",
@@ -5291,9 +5291,9 @@
             "description": "GrapQl for Magento 2 Blog extension by Magefan",
             "support": {
                 "issues": "https://github.com/magefan/module-blog-graph-ql/issues",
-                "source": "https://github.com/magefan/module-blog-graph-ql/tree/2.1.8"
+                "source": "https://github.com/magefan/module-blog-graph-ql/tree/2.1.9"
             },
-            "time": "2023-03-29T13:52:41+00:00"
+            "time": "2023-08-21T14:13:31+00:00"
         },
         {
             "name": "magefan/module-cli",
@@ -24304,16 +24304,16 @@
         },
         {
             "name": "codeception/codeception",
-            "version": "5.0.10",
+            "version": "5.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "ed4af7fd4103cdd035916fbb8f35124edd2d018b"
+                "reference": "1998a287a3d7f2771c9591aef1c528d9d44cc4b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/ed4af7fd4103cdd035916fbb8f35124edd2d018b",
-                "reference": "ed4af7fd4103cdd035916fbb8f35124edd2d018b",
+                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/1998a287a3d7f2771c9591aef1c528d9d44cc4b4",
+                "reference": "1998a287a3d7f2771c9591aef1c528d9d44cc4b4",
                 "shasum": ""
             },
             "require": {
@@ -24408,7 +24408,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Codeception/Codeception/issues",
-                "source": "https://github.com/Codeception/Codeception/tree/5.0.10"
+                "source": "https://github.com/Codeception/Codeception/tree/5.0.11"
             },
             "funding": [
                 {
@@ -24416,7 +24416,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-03-14T07:21:10+00:00"
+            "time": "2023-08-22T06:42:39+00:00"
         },
         {
             "name": "codeception/lib-asserts",
