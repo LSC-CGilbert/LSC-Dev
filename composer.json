@@ -18,9 +18,24 @@
     },
     "version": "2.4.6-p2",
     "require": {
+        "amasty/aminvisiblecaptcha": "^2.5",
+        "amasty/extra-fee-graph-ql": "^1.0",
+        "amasty/feed": "^2.8",
+        "amasty/module-ajax-filters-navigation": "^1.0",
+        "amasty/module-customer-attributes-subscription-package-lite": "^2.5",
+        "amasty/module-extra-fee": "^1.6",
+        "amasty/module-mega-menu-lite": "^1.5",
+        "amasty/module-one-step-checkout-pro-package": "^2.3",
+        "amasty/module-request-a-quote-graphql": "^1.0",
+        "amasty/module-request-a-quote-pro-subscription-package": "^1.0",
+        "amasty/module-sales-reps-and-dealers": "^1.2",
+        "amasty/module-thank-you-page": "^1.2",
+        "amasty/product-attachment-lite": "^3.1",
+        "amasty/product-tabs": "^1.2",
+        "amasty/theme-frontend-jet-theme": "^1.16",
+        "avalara/avatax-magento": "^2.6",
         "bridge/productbadge": "1.0.0",
         "bsscommerce/magento-2-custom-product-attribute-export-extension": "^1.0.6",
-        "cart2quote/module-quotation-encoded": "^4.3",
         "magefan/module-auto-related-product": "^2.1",
         "magefan/module-blog": "^2.10",
         "magefan/module-cli": "^2.1",
@@ -28,13 +43,15 @@
         "magefan/module-html-sitemap": "^2.1",
         "magefan/module-lazyload": "2.0.23.1",
         "magefan/module-login-as-customer": "^2.3",
+        "magefan/module-rocketjavascript": "^2.1",
         "magefan/module-webp": "^2.3.1",
         "magefan/module-wysiwyg-advanced": "^2.0",
         "magefan/module-xml-sitemap": "^2.0",
         "magento/composer-dependency-version-audit-plugin": "~0.1",
         "magento/composer-root-update-plugin": "~2.0",
         "magento/product-community-edition": "2.4.6-p2",
-        "markshust/magento2-module-pagebuildersourcecode": "^1.0"
+        "markshust/magento2-module-pagebuildersourcecode": "^1.0",
+        "predis/predis": "^2.2"
     },
     "autoload": {
         "exclude-from-classmap": [
@@ -97,6 +114,10 @@
         "0": {
             "type": "composer",
             "url": "https://repo.magento.com/"
+        },
+        "amasty": {
+            "type": "composer",
+            "url": "https://composer.amasty.com/community/"
         }
     },
     "extra": {
