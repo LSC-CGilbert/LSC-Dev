@@ -38,6 +38,9 @@ atlassian*
 /.php-cs-fixer.php
 /.php-cs-fixer.cache
 /grunt-config.json
+/pub/media/amasty/*
+/pub/media/email/*
+/pub/media/sales/*
 /pub/media/mf_webp/*
 /pub/media/casestudies/*
 /pub/media/brandcrock/*
