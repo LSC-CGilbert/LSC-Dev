@@ -47,8 +47,7 @@ class Collection extends \Magento\Framework\Data\Collection implements SearchRes
     )
     {
         parent::__construct(
-            $entityFactory,
-
+            $entityFactory
         );
 
         $this->_dataObjectFactory = $dataObjectFactory;

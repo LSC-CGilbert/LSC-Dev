@@ -19,7 +19,11 @@ class Category extends \WeltPixel\GA4\Block\Core
         }
 
         $currentCategory = $this->getCurrentCategory();
-        if ($currentCategory && $currentCategory->getData('display_mode') == \Magento\Catalog\Model\Category::DM_PAGE) {
+        $displayMode = $currentCategory->getData('weltpixel_sc_layout') ?? '';
+        if ($currentCategory &&
+            ( $currentCategory->getData('display_mode') == \Magento\Catalog\Model\Category::DM_PAGE
+                || $displayMode == 'subcategories_images')
+        ) {
             return [];
         }
 

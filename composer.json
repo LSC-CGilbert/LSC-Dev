@@ -18,6 +18,7 @@
     },
     "version": "2.4.6-p2",
     "require": {
+        "algolia/algoliasearch-magento-2": "^3.10",
         "amasty/aminvisiblecaptcha": "^2.5",
         "amasty/extra-fee-graph-ql": "^1.0",
         "amasty/feed": "^2.8",
@@ -36,6 +37,8 @@
         "avalara/avatax-magento": "^2.6",
         "bridge/productbadge": "1.0.0",
         "bsscommerce/magento-2-custom-product-attribute-export-extension": "^1.0.6",
+        "elasticsearch/elasticsearch": "^7.17",
+        "klaviyo/magento2-extension": "^4.0",
         "magefan/module-auto-related-product": "^2.1",
         "magefan/module-blog": "^2.10",
         "magefan/module-cli": "^2.1",
