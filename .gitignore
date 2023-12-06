@@ -41,6 +41,7 @@ atlassian*
 /grunt-config.json
 /pub/media/ga4Export/*
 /pub/media/magefan_blog/*
+/pub/media/blog/*
 /pub/media/amasty/*
 /pub/media/email/*
 /pub/media/sales/*
