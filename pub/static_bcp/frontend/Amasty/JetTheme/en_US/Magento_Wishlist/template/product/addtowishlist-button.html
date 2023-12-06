@@ -1,0 +1,13 @@
+<if args="isAllowed()">
+    <a href="#"
+       afterRender="afterRenderHandler"
+       attr="'data-post': getDataPost($row()),
+              title: getLabel()"
+       class="action towishlist amtheme-circle-icon"
+       data-action="add-to-wishlist"
+       role="button">
+        <svg class="amtheme-icon -hover-bg">
+            <use xlink:href="#icon-wishlist"></use>
+        </svg>
+    </a>
+</if>

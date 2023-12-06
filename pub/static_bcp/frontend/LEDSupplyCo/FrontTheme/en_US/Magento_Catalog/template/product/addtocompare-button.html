@@ -1,0 +1,12 @@
+<if args="isAllowed()">
+    <a href="#"
+       afterRender="afterRenderHandler"
+       attr="'data-post': $col.getDataPost($row()), title: getLabel()"
+       class="action tocompare amtheme-circle-icon"
+       data-action="add-to-compare"
+       role="button">
+        <svg class="amtheme-icon -hover-bg">
+            <use xlink:href="#icon-compare"></use>
+        </svg>
+    </a>
+</if>

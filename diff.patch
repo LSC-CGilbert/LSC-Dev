@@ -1,0 +1,88 @@
+#====================================================================================================================================================#
+#                This is a patch file. You can apply it using "patch -p2 < diff.patch" or revert it using "patch -R -p2 < diff.patch"                #
+#                                                        (c) Created by Amasty Team 07-10-2023                                                       #
+#====================================================================================================================================================#
+diff --git a/vendor/amasty/jet-theme/Controller/Ajax/AddToCart.php b/vendor/amasty/jet-theme/Controller/Ajax/AddToCart.php
+index 1780d78..8e262da 100644
+--- a/vendor/amasty/jet-theme/Controller/Ajax/AddToCart.php
++++ b/vendor/amasty/jet-theme/Controller/Ajax/AddToCart.php
+@@ -24,6 +24,7 @@ use Magento\Framework\Controller\Result\Json;
+ use Magento\Framework\Controller\ResultFactory;
+ use Magento\Framework\Controller\ResultInterface;
+ use Magento\Framework\Exception\LocalizedException;
++use Magento\Framework\Math\Division as MathDivision;
+ use Magento\Framework\Registry;
+ use Psr\Log\LoggerInterface;
+ 
+@@ -69,6 +70,11 @@ class AddToCart extends Action implements HttpPostActionInterface
+      */
+     private $coreRegistry;
+ 
++    /**
++     * @var MathDivision
++     */
++    protected $mathDivision;
++
+     public function __construct(
+         Context $context,
+         AddToRequestValidator $addToRequestValidator,
+@@ -78,7 +84,8 @@ class AddToCart extends Action implements HttpPostActionInterface
+         LoggerInterface $logger,
+         Product $productHelper,
+         PopupRenderer $popupRenderer,
+-        Registry $coreRegistry
++        Registry $coreRegistry,
++        MathDivision $mathDivision
+     ) {
+         parent::__construct($context);
+         $this->addToRequestValidator = $addToRequestValidator;
+@@ -89,6 +96,7 @@ class AddToCart extends Action implements HttpPostActionInterface
+         $this->productHelper = $productHelper;
+         $this->popupRenderer = $popupRenderer;
+         $this->coreRegistry = $coreRegistry;
++        $this->mathDivision = $mathDivision;
+     }
+ 
+     /**
+@@ -135,8 +143,22 @@ class AddToCart extends Action implements HttpPostActionInterface
+                 $resultJson->setHttpResponseCode(200);
+                 $resultJson->setData(['render_popup' => false, 'success' => true]);
+             } catch (\Exception $e) {
++                $stockItem = $product->getExtensionAttributes()->getStockItem();
++                $qtyIncrements = $stockItem->getQtyIncrements() * 1;
++                if ($qtyIncrements && $this->mathDivision->getExactDivision($product->getQty(), $qtyIncrements) != 0) {
++                    if ($stockItem->getIsChildItem()) {
++                        $message = __(
++                            'You can buy %1 only in quantities of %2 at a time.',
++                            $stockItem->getProductName(),
++                            $qtyIncrements
++                        );
++                    } else {
++                        $message = __('You can buy this product only in quantities of %1 at a time.', $qtyIncrements);
++                    }
++                } else {
++                    $message = __('We can\'t add this item to your shopping cart right now.');
++                }
+                 $resultJson->setHttpResponseCode(400);
+-                $message = __('We can\'t add this item to your shopping cart right now.');
+                 $resultJson->setData(['message' => $message]);
+                 if (!$isModal) {
+                     $this->messageManager->addErrorMessage($message);
+diff --git a/vendor/amasty/theme-frontend-jet-theme-lite/Magento_Catalog/web/js/product/view/validation-mixin.js b/vendor/amasty/theme-frontend-jet-theme-lite/Magento_Catalog/web/js/product/view/validation-mixin.js
+index 9fe1e78..d9cc377 100644
+--- a/vendor/amasty/theme-frontend-jet-theme-lite/Magento_Catalog/web/js/product/view/validation-mixin.js
++++ b/vendor/amasty/theme-frontend-jet-theme-lite/Magento_Catalog/web/js/product/view/validation-mixin.js
+@@ -30,6 +30,13 @@ define([
+                     }
+                 }
+ 
++                this.errorMessageBoxAttr = 'data-errors-message-box';
++                this.validationRuleName = 'validate-one-checkbox-required-by-name';
++                this.dataValidateAttr = 'data-validate';
++                this.errorMessageBoxAttr = 'data-errors-message-box';
++                this.errorMessageContainerId = '#links-advice-container';
++                this.errorPopupMessageContainerId = '#popup-links-advice-container';
++
+                 if (element.attr(this.errorMessageBoxAttr)) {
+                     messageBox = $(element.attr(this.errorMessageBoxAttr));
+                     messageBox.html(error);

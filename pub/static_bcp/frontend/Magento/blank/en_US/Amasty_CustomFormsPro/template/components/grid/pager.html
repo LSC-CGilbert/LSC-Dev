@@ -1,0 +1,40 @@
+<div class="amcform-pager-block" data-bind="visible: isLoaded() && !isEmptyContent()">
+    <div class="amcform-wrap" data-bind="visible: isPaginationVisible()">
+        <button class="amcform-button -arrow -clear"
+                data-bind="
+                    click: function() { setCurrentPage(currentPage() - 1) },
+                    css: { '-disabled': currentPage() == 1 },
+                    attr: { title: $t('Prev') }
+                ">
+            <i class="amcform-icon -chevron-left"></i>
+        </button>
+        <div class="amcform-items" data-bind="foreach: pagesToDisplay()">
+            <button class="amcform-item" data-bind="
+                css: { '-selected': $parent.isCurrentPage($data), '-dotted': isNaN(+$parent.getPageTitle($data)) },
+                text: $parent.getPageTitle($data),
+                click: $data !== 0 ? $parent.setCurrentPage.bind($parent, $data) : null
+            "></button>
+        </div>
+        <button class="amcform-button -arrow -clear"
+                data-bind="
+                    click: function() { setCurrentPage(currentPage() + 1) },
+                    css: { '-disabled': currentPage() == getLastPage() },
+                    attr: { title: $t('Next') }
+                ">
+            <i class="amcform-icon -chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="amcform-page-size">
+        <label class="amcform-text" for="amcform-page-size" data-bind="i18n: 'Show'"></label>
+        <select class="amcform-select"
+                name="amcform-page-size"
+                id="amcform-page-size"
+                data-bind="value: pageSize">
+            <option value="5" data-bind="text: 5"></option>
+            <option value="10" data-bind="text: 10"></option>
+            <option value="15" data-bind="text: 15"></option>
+        </select>
+        <span class="amcform-text" data-bind="i18n: 'per page'"></span>
+    </div>
+</div>

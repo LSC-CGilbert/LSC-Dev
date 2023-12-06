@@ -1,0 +1,23 @@
+<input class="admin__control-file" type="file" data-bind="
+    hasFocus: focused,
+    attr: {
+        name: inputName,
+        placeholder: placeholder,
+        'aria-describedby': noticeId,
+        id: uid,
+        disabled: disabled,
+        form: formId
+    }"
+/>
+<!-- ko if: $parent.source.data.product[code] -->
+<span>
+
+    <img data-bind="attr: {src:media_url+'bridge/product_badges/'+$parent.source.data.product[code]}"  width="100" height="100" />
+    <a attr="href: media_url+'bridge/product_badges/'+$parent.source.data.product[code]" text="$parent.source.data.product[code]" target="_blank"></a>
+
+    <label attr="for: uid+'_delete'">
+        <input type="checkbox" attr="name: 'product['+code + '_delete]', id: uid+'_delete', form: formId">
+        <span data-bind="i18n:'Delete'"></span>
+    </label>
+</span>
+<!-- /ko -->

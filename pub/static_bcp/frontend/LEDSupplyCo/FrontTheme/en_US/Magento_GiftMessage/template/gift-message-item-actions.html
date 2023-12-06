@@ -1,0 +1,22 @@
+<div class="actions-toolbar">
+    <a href="#"
+       class="action action-edit"
+       data-bind="
+            i18n: 'Edit',
+            attr: {
+                'title': $t('Edit'),
+                'aria-label': $t('Edit')
+            },
+            click: $data.editOptions.bind($data)">
+    </a>
+    <a href="#"
+       class="action action-delete"
+       data-bind="
+            i18n: 'Delete',
+            attr: {
+                'title': $t('Delete'),
+                'aria-label': $t('Delete')
+            },
+            click: $data.deleteOptions.bind($data)">
+    </a>
+</div>

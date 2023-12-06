@@ -1,0 +1,12 @@
+<span data-bind="
+        attr: {
+            class: 'amcform-status-block' + (isTypeResponse ? (' -response') : (' -' + $parent.answer_status.value.toLowerCase()))
+        }
+">
+    <i data-bind="
+        attr: { class: 'amcform-icon ' + (Number($parent.admin_response_status.value) ? '-sent' : '-pending') },
+        visible: isTypeResponse
+    "></i>
+    <span class="amcform-text"
+          data-bind="text: isTypeResponse ? $parent.admin_response_status.label : $parent.answer_status.label"></span>
+</span>

@@ -1,0 +1,14 @@
+<span class="product-image-container">
+    <span class="product-image-wrapper">
+        <img class="img"
+            data-bind="attr: {
+            'src': getSrc($parents[1]),
+            'width': getWidth($parents[1]),
+            'height': getHeight($parents[1]),
+            'alt': getAlt($parents[1]),
+            'title': getAlt($parents[1]) }"/>
+    </span>
+    <div class="details-qty">
+        <span class="value" data-bind="text: $parents[1].qty"></span>
+    </div>
+</span>

@@ -1,0 +1,29 @@
+<div class="opc-block-summary" data-bind="mageInit: {
+     'collapsible':{
+        'openedState': 'active',
+        'collateral': {
+            'element': 'html',
+            'openedState':'opc-summary-open'
+            }
+        }
+     },
+     blockLoader: isLoading">
+    <span data-bind="i18n: 'Order Summary'" class="title"></span>
+    <div class="title amtheme-summary-order" data-role="title" role="heading" aria-level="1">
+        <span class="amtheme-count">
+            <translate args="getMaxCartItems()" if="getMaxCartItems() < getLineCartItems()"></translate>
+            <span class="of">
+                <translate class="of" args="'of'" if="getMaxCartItems() < getLineCartItems()"></translate>
+            </span>
+            <span class="number" data-bind="text: getSummaryCartItems()"></span>
+            <translate args="'Item in Cart'" if="getLineCartItems() === 1"></translate>
+            <translate args="'Items in Cart'" if="getLineCartItems() > 1"></translate>
+        </span>
+        <span class="total" data-bind="text: getEstimateTotal()"></span>
+    </div>
+    <div class="amtheme-summary-content" data-role="content">
+        <!-- ko foreach: elems() -->
+            <!-- ko template: getTemplate() --><!-- /ko -->
+        <!-- /ko -->
+    </div>
+</div>

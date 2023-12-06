@@ -1,0 +1,29 @@
+<if args="isAllowed()">
+    <if args="isSalable($row())">
+        <ifnot args="isAjaxEnabled($parent)">
+            <button class="action tocart primary"
+                    attr="'data-mage-init': getDataMageInit($row()),
+                          'data-post': getDataPost($row()),
+                           title: getLabel(),
+                          'aria-label': getLabel()"
+                    type="button">
+                <span text="getLabel()"></span>
+            </button>
+        </ifnot>
+        <if args="isAjaxEnabled($parent)">
+            <button class="action tocart primary"
+                    attr="'data-amtheme-js': 'ajax-tocart',
+                          'data-post': getDataPost($row()),
+                           title: getLabel(),
+                          'aria-label': getLabel()"
+                    afterRender="setAjaxAction.bind($parent, $element)"
+                    type="button">
+                <span text="getLabel()"></span>
+            </button>
+        </if>
+    </if>
+
+    <ifnot args="isSalable($row())">
+        <span class="stock unavailable" translate="'Out of stock'"></span>
+    </ifnot>
+</if>

@@ -1,0 +1,43 @@
+<div class="amcform-grid-block">
+    <!-- ko scope: 'grid_header' -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    <!-- /ko -->
+
+    <ul class="amcform-grid-list"
+        data-amcform-js="items"
+        data-bind="foreach: elems(), visible: elems().length">
+        <li data-bind="
+                attr: {
+                    'class': 'amcform-grid-item',
+                    'data-amcform-js': 'item',
+                    'data-item-id': id
+                }
+        ">
+            <span class="amcform-cell" data-bind="attr: { 'data-title': $t('Form') }, i18n: form_name"></span>
+            <span class="amcform-cell" data-bind="attr: { 'data-title': $t('Submitted') }, i18n: created_at"></span>
+            <span class="amcform-cell"
+                  data-bind="attr: { 'data-title': $t('Updated') }, i18n: updated_at ? updated_at : '-'"></span>
+            <span class="amcform-cell" data-bind="attr: { 'data-title': $t('Status') }">
+                <!-- ko scope: 'grid_status' -->
+                    <!-- ko template: getTemplate() --><!-- /ko -->
+                <!-- /ko -->
+            </span>
+            <span class="amcform-cell" data-bind="attr: { 'data-title': $t('Admin Response') }">
+                <!-- ko scope: 'grid_response' -->
+                    <!-- ko template: getTemplate() --><!-- /ko -->
+                <!-- /ko -->
+            </span>
+            <!-- ko scope: 'grid_actions' -->
+                <!-- ko template: getTemplate() --><!-- /ko -->
+            <!-- /ko -->
+        </li>
+    </ul>
+
+    <!-- ko scope: 'grid_messages' -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    <!-- /ko -->
+
+    <!-- ko scope: 'grid_pager' -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    <!-- /ko -->
+</div>

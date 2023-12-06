@@ -1,0 +1,33 @@
+#====================================================================================================================================================#
+#                This is a patch file. You can apply it using "patch -p2 < diff.patch" or revert it using "patch -R -p2 < diff.patch"                #
+#                                                        (c) Created by Amasty Team 16-10-2023                                                       #
+#====================================================================================================================================================#
+diff --git a/vendor/amasty/jet-theme/ViewModel/StickyHeaderViewModel.php b/vendor/amasty/jet-theme/ViewModel/StickyHeaderViewModel.php
+index 631c8d2..5352c88 100644
+--- a/vendor/amasty/jet-theme/ViewModel/StickyHeaderViewModel.php
++++ b/vendor/amasty/jet-theme/ViewModel/StickyHeaderViewModel.php
+@@ -39,8 +39,7 @@ class StickyHeaderViewModel implements ArgumentInterface
+      */
+     public function isStickyHeaderEnabled(): bool
+     {
+-        return $this->configProvider->isStickyHeaderEnabled()
+-            && !$this->moduleManager->isEnabled('Amasty_MegaMenu');
++        return $this->configProvider->isStickyHeaderEnabled();
+     }
+ 
+     /**
+diff --git a/vendor/amasty/theme-frontend-jet-theme-lite/web/css/source/_extend.less b/vendor/amasty/theme-frontend-jet-theme-lite/web/css/source/_extend.less
+index 87761b5..c5b31d8 100644
+--- a/vendor/amasty/theme-frontend-jet-theme-lite/web/css/source/_extend.less
++++ b/vendor/amasty/theme-frontend-jet-theme-lite/web/css/source/_extend.less
+@@ -37,3 +37,10 @@
+ // -----------------------------------------------
+ 
+ @import '_am-jet-extend.less';
++.-sticky-header.-show [data-ammenu-js="nav-sections"] {
++  margin: 0 !important;
++}
++
++.-sticky-header.-desktop-navigation-toggle.-show .amtheme-icon-box {
++  display: none !important;
++}

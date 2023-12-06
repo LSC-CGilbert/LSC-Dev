@@ -1,0 +1,18 @@
+<!-- ko foreach: getRegion('messages') -->
+    <!-- ko template: getTemplate() --><!-- /ko -->
+<!--/ko-->
+<div class="amtheme-success-registration">
+    <!-- ko if: isFormVisible -->
+        <p>
+            <span data-bind="i18n: 'You can track your order status by'"></span>
+            <a data-bind="attr: {
+                href: getUrl(),
+                title: $t('Create an Account')},
+                i18n: 'creating an account'"></a>
+        </p>
+        <p>
+            <span data-bind="i18n: 'Email Address'"></span>:
+            <span data-bind="text: getEmailAddress()"></span>
+        </p>
+    <!--/ko-->
+</div>

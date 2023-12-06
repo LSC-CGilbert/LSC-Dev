@@ -1,0 +1,36 @@
+<!-- ko if: isActive() || hasActiveOptions() -->
+    <div class="amtheme-gift-item-block amtheme-cart-gift-item">
+        <span class="amtheme-action-gift"
+              data-bind="
+                click: $data.toggleFormBlockVisibility.bind($data),
+                css: {'-active': formBlockVisibility() || resultBlockVisibility()},
+                i18n: 'Gift options'">
+        </span>
+        <div class="amtheme-gift-content" data-bind="css: {'-active': formBlockVisibility() || resultBlockVisibility()}">
+            <!-- ko ifnot: resultBlockVisibility() -->
+                <div class="amtheme-gift-options">
+                    <!-- ko foreach: getRegion('additionalOptions') -->
+                        <!-- ko template: getTemplate() --><!-- /ko -->
+                    <!-- /ko -->
+                    <!-- ko template: formTemplate --><!--/ko-->
+                </div>
+            <!-- /ko -->
+            <div class="amtheme-gift-summary">
+                <!-- ko if: resultBlockVisibility() -->
+                    <!-- ko foreach: getRegion('additionalOptions') -->
+                        <!--ko template: appliedTemplate --><!-- /ko -->
+                    <!-- /ko -->
+
+                    <!-- ko if: getObservable('message') -->
+                        <div class="gift-message-summary">
+                            <span data-bind="i18n: 'Message:'"></span>
+                            <!-- ko text: getObservable('message') --><!-- /ko -->
+                        </div>
+                    <!-- /ko -->
+
+                    <!-- ko template: 'Magento_GiftMessage/gift-message-item-actions' --><!-- /ko -->
+                <!-- /ko -->
+            </div>
+        </div>
+    </div>
+<!-- /ko -->

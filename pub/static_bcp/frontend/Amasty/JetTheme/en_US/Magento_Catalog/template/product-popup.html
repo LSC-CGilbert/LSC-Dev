@@ -1,0 +1,33 @@
+<div class="amtheme-popup-block
+        <% if(data.config.popupWrapClass){ %><%- data.config.popupWrapClass %><% } %>"
+        <% if(data.config.popupWrapId){ %> id="<%- data.config.popupWrapId %><% } %>"
+     tabindex="0">
+    <div class="popup-inner">
+        <button class="amtheme-button-close"
+                tabindex="0"
+                title="<%- data.config.closeButtonTitle %>"
+                aria-label="<%- data.config.closeButtonTitle %>"
+                data-amtheme-js="popup-close">
+            <svg class="amtheme-icon -icon-close">
+                <use xlink:href="#icon-close" />
+            </svg>
+        </button>
+        <% if(data.title || data.subtitle){ %>
+            <div class="popup-heading">
+                <% if(data.title){ %>
+                    <h4 class="form-title">
+                        <%- data.title %>
+                    </h4>
+                <% } %>
+                <% if(data.subtitle){ %>
+                    <span class="popup-subtitle">
+                        <%- data.subtitle %>
+                    </span>
+                <% } %>
+            </div>
+        <% } %>
+        <div class="block-content">
+            <%= data.content %>
+        </div>
+    </div>
+</div>

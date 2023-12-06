@@ -1,0 +1,28 @@
+<!-- ko if: isTaxDisplayedInGrandTotal && isDisplayed() -->
+<tr class="grand totals incl -first">
+    <th class="mark" scope="row">
+        <strong data-bind="i18n: inclTaxLabel"></strong>
+    </th>
+    <td data-bind="attr: {'data-th': inclTaxLabel}" class="amount">
+        <span class="price" data-bind="text: getValue()"></span>
+    </td>
+</tr>
+<tr class="grand totals excl">
+    <th class="mark" scope="row">
+        <strong data-bind="i18n: exclTaxLabel"></strong>
+    </th>
+    <td data-bind="attr: {'data-th': exclTaxLabel}" class="amount">
+       <span class="price" data-bind="text: getGrandTotalExclTax()"></span>
+    </td>
+</tr>
+<!-- /ko -->
+<!-- ko if: !isTaxDisplayedInGrandTotal && isDisplayed() -->
+<tr class="grand totals -first">
+    <th class="mark" scope="row">
+        <strong data-bind="i18n: title"></strong>
+    </th>
+    <td data-bind="attr: {'data-th': title}" class="amount">
+        <span class="price" data-bind="text: getValue()"></span>
+    </td>
+</tr>
+<!-- /ko -->

@@ -1,0 +1,5 @@
+<p class="amcform-grid-message"
+   data-bind="visible: !$parent.elems().length && $parent.isLoaded(), text: '😔 ' + $t('There are no submitted forms.')"></p>
+
+<p class="amcform-grid-message"
+   data-bind="visible: $parent.isError(), text: '😔 ' + $t('Something went wrong.')"></p>

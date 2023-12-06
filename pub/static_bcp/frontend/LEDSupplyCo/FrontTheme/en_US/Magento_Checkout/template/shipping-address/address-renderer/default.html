@@ -1,0 +1,43 @@
+<div class="shipping-address-item" css="'selected-item' : isSelected() , 'not-selected-item':!isSelected()">
+    <div class="amtheme-ship-here">
+        <button type="button"
+                class="action action-select-shipping-item"
+                css="'-selected' : isSelected()"
+                data-bind="click: !isSelected() ? selectAddress : '', attr:{title: $t('Ship here')}"
+                text="$t('Ship here')">
+        </button>
+    </div>
+    <div class="amtheme-address-info">
+        <span class="amtheme-label" translate="'Contact'"></span>
+        <span class="amtheme-content">
+            <text args="address().prefix"></text>
+            <text args="address().firstname"></text>
+            <text args="address().middlename"></text>
+            <text args="address().lastname"></text>
+            <text args="address().suffix"></text>
+            <span class="field" if="address().telephone" text="address().telephone"></span>
+            <span class="field" if="address().email"  text="address().email"></span>
+        </span>
+
+        <span class="amtheme-label" translate="'Ship to'"></span>
+        <span class="amtheme-content">
+            <text args="_.values(address().street).join(', ')"></text>,
+            <text args="address().city"></text>,
+            <span text="address().region"></span>
+            <text args="address().postcode"></text>,
+            <text args="getCountryName(address().countryId)"></text>
+            <span class="field">
+                <each args="data: address().customAttributes, as: 'element'">
+                    <text args="$parent.getCustomAttributeLabel(element)"></text><br>
+                </each>
+            </span>
+        </span>
+    </div>
+    <button type="button"
+            visible="address().isEditable()"
+            class="action edit-address-link button-as-link am-text-uppercase"
+            click="editNewAddress"
+            css="'-hidden': isEditVisible()"
+            data-bind="attr:{title: $t('Edit address')}" text="$t('Edit')">
+    </button>
+</div>

@@ -1,0 +1,15 @@
+<div data-bind="attr: { class: '-' + type() + ' amcform-popup' }"
+     data-amcform-js="popup-inner"
+     tabindex="0">
+    <button class="amcform-button -clear -with-icon -close-popup" data-bind="click: hide()">
+        <i class="amcform-icon -cross"></i>
+    </button>
+    <div class="amcform-title">
+        <h5 class="amcform-header" data-bind="visible: header, html: header"></h5>
+        <p class="amcform-desc" data-bind="visible: description, html: description"></p>
+    </div>
+    <div class="amcform-content" data-bind="visible: messagesList().length"></div>
+    <div class="amcform-toolbar" data-bind="foreach: buttons, visible: buttons">
+        <button data-bind="i18n: text, attr: { class: classes + ' amcform-button' }, click: callback"></button>
+    </div>
+</div>

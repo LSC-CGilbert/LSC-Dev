@@ -1,0 +1,57 @@
+<select class="amtheme-select" tabindex="-1" data-bind="
+    attr: {
+        name: inputName,
+        id: uid,
+        disabled: disabled,
+        'aria-describedby': getDescriptionId(),
+        'aria-required': required,
+        'aria-invalid': error() ? true : 'false',
+        placeholder: placeholder
+    },
+    hasFocus: focused,
+    optgroup: options,
+    value: value,
+    optionsCaption: caption,
+    optionsValue: 'value',
+    optionsText: 'label',
+    optionsAfterRender: function(option, item) {
+        if (item && item.disabled) {
+            ko.applyBindingsToNode(option, {attr: {disabled: true}}, item);
+        }
+    }"
+></select>
+
+<div class="amtheme-select-block"
+     data-bind="mageInit: {
+         'Magento_Theme/js/components/am-select': {
+             'selectId': uid
+         }}, attr: {disabled: disabled}"
+     data-amselect-js="select">
+        <span role="button"
+              tabindex="0"
+              class="amtheme-placeholder"
+              data-amselect-js="placeholder">
+            <span class="amtheme-content"
+                  data-amselect-js="placeholder-content"
+                  data-bind="text: placeholder ? placeholder : $t('Please select...') ">
+            </span>
+        </span>
+    <ul role="list"
+        class="amtheme-select-options"
+        data-amselect-js="options">
+        <!-- ko if: caption -->
+            <li class="amtheme-option"
+                tabindex="0"
+                data-amselect-js="item"
+                data-bind="text: caption">
+            </li>
+        <!-- /ko -->
+        <!-- ko foreach: $data.options -->
+            <li class="amtheme-option"
+                tabindex="0"
+                data-amselect-js="item"
+                data-bind="text: label, attr: {'data-amselect-value': value}">
+            </li>
+        <!-- /ko -->
+    </ul>
+</div>

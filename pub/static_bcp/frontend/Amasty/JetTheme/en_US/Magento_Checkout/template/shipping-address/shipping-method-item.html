@@ -1,0 +1,33 @@
+<div class="amtheme-item">
+    <div class="amtheme-method" click="element.selectShippingMethod">
+        <div class="amtheme-info">
+            <input type="radio"
+                   class="radio"
+                   ifnot="method.error_message"
+                   ko-checked="element.isSelected"
+                   ko-value="method.carrier_code + '_' + method.method_code"
+                   attr="'aria-labelledby': 'label_method_' + method.method_code + '_' + method.carrier_code + ' ' + 'label_carrier_' + method.method_code + '_' + method.carrier_code,
+                        'checked': element.rates().length == 1 || element.isSelected, id: method.carrier_code + '_' + method.method_code" />
+            <label data-bind="attr: {for: method.carrier_code + '_' + method.method_code}">
+                <p class="amtheme-title"
+                   attr="'id': 'label_carrier_' + method.method_code + '_' + method.carrier_code"
+                   text="method.carrier_title"></p>
+                <p class="amtheme-description"
+                   attr="'id': 'label_method_' + method.method_code + '_' + method.carrier_code"
+                   text="method.method_title"></p>
+            </label>
+        </div>
+        <div class="amtheme-price">
+            <each args="element.getRegion('price')" render=""></each>
+        </div>
+    </div>
+    <div class="amtheme-error" if="method.error_message">
+        <div role="alert" class="message error">
+            <div text="method.error_message"></div>
+        </div>
+        <span class="no-display">
+            <input type="radio"
+                   attr="'value' : method.method_code, 'id': 's_method_' + method.method_code" />
+        </span>
+    </div>
+</div>

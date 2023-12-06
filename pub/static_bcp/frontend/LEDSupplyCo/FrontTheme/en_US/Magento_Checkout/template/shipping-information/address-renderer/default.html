@@ -1,0 +1,13 @@
+<if args="visible()">
+    <text args="address().prefix"></text> <text args="address().firstname"></text> <text args="address().middlename"></text>
+    <text args="address().lastname"></text> <text args="address().suffix"></text>,
+    <text args="_.values(address().street).join(', ')"></text>,
+    <text args="address().city "></text><span text="address().region"></span> <text args="address().postcode"></text>,
+    <text args="getCountryName(address().countryId)"></text><br>
+    <if args="address().telephone">
+        <text args="address().telephone"></text><br>
+    </if>
+    <each args="data: address().customAttributes, as: 'element'">
+        <text args="$parent.getCustomAttributeLabel(element)"></text><br>
+    </each>
+</if>

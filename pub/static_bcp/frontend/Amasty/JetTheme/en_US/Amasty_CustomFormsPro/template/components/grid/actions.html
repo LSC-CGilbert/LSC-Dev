@@ -1,0 +1,14 @@
+<span data-bind="
+        foreach: $parent.actions,
+        visible: $parent.actions.length,
+        attr: {
+            'class': 'amcform-actions-block amcform-cell'
+        }">
+    <button data-bind="
+            attr: { class: 'amcform-button -with-icon -small', title: $data },
+            click: $parent.actionClickEvent.bind($parent, $data, $parentContext.$parent.id, $parentContext.$parent.is_can_resubmit)
+    ">
+        <i data-bind="attr: { class: 'amcform-icon -' + $data }"></i>
+        <span data-bind="text: $data"></span>
+    </button>
+</span>
